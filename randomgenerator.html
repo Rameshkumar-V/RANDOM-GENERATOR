@@ -119,7 +119,7 @@
     var data=JSON.parse(datastring);
 
     console.log(data.commonstr);
-    createrandom(Number(data.rangestart),data.commonstr);
+    createrandom(Number(data.rangestart),String(data.commonstr));
     console.log(users);
 
     function datadisplay(){
