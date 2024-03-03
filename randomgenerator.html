@@ -106,7 +106,7 @@
         let no;
 
         for(no=1;no<inputrange+1;no++){
-            users.push('u22csc00'+no);
+            users.push(cmnstr+no);
         };
         revealbtnoff();
         createbtnon();
@@ -119,7 +119,7 @@
     var data=JSON.parse(datastring);
 
     console.log(data.commonstr);
-    createrandom(Number(data.rangestart));
+    createrandom(Number(data.rangestart),data.commonstr);
     console.log(users);
 
     function datadisplay(){
